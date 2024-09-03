@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("images.jpg");
+    background-size: auto;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1 {
+    width: 80%;
+    height: 500px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+#navigation {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navigation h1 {
+    height: 50px;
+    width: 10%;
+    transition: all 0.5s linear;
+}
+
+#navigation h1:hover {
+    text-shadow: 0 0 5px white, 0 0 15px white, 0 0 25px white,
+    0 0 35px white;
+}
+
+#navigation a {
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+
+a .active{
+    color: orange;
+}
+
+#navigation a:active{
+    color: orange;
+}
+
+#navigation a:hover {
+    text-shadow: 0 0 5px white, 0 0 15px white, 0 0 25px white,
+    0 0 35px white;
+}
+
+#content {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    display: flex;
+}
+
+#imagebox {
+    width: 30%;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-image: url("myimage.jpg");
+    border-radius: 50%;
+    border: 3px solid grey;
+    transition: all 2s linear
+}
+
+#imagebox:hover {
+    border: 3px solid rgba(122, 5, 5, 0.362);
+    opacity: 0.3;
+}
+
+#heading {
+    width: 60%;
+    height: 300px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline;
+}
+
+#header {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(198, 198, 12, 0.758);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid lightblue;
+    animation:  typing steps(10,end) forwards infinite 5s;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        text-align: center;
+        margin-left: 200px;
+    }
+    100%{
+        width:36%;
+        text-align: center;
+        margin-left: 200px;
+    }
+}
+
+#header2 {
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+    text-align: center;
+    color: white;
+}
+
+#paragraph {
+    width: 100%;
+    height: 180px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* about page */
+#content1 {
+    width: 90%;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#header3 {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgba(198, 198, 12, 0.758);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid lightblue;
+    animation:  textslider steps(8,end) forwards infinite 5s;
+}
+
+@keyframes textslider {
+    0% {
+        width: 0;
+        margin-left: 50px;
+    }
+    100% {
+        width:17%;
+        margin-left: 50px;
+    }
+}
+
+#paragraph2 {
+    width: 85%;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+#paragraph2 b {
+    color: rgba(197, 203, 25, 0.859);
+}
+
+
+/* project page */
+
+#project_heading {
+    color: lightblue;
+    text-align: center;
+}
+
+
+#project{
+    margin: 30px;
+    width: 90%;
+    height: 350px;
+    overflow: scroll;
+}
+
+#calc{
+    color: darkorange;
+    margin: 20px;
+}
+
+
+#atag {
+    color: black;
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+}
+button {
+    background-color: lightblue;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px double white;
+}
+
+/* contact page */
+
+#cnt {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    /* border: 2px solid white; */
+}
+
+#address {
+    width: 50%;
+    height: 320px;
+    margin-top: 30px;
+    margin-left: 30px;
+    /* border: 2px solid white; */
+}
+
+#adr p {
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* border: 2px solid white; */
+}
+
+#icon {
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* border: 2px solid white; */
+}
+#icon i {
+    margin-left: 20px;
+}
+
+#map {
+    width: 50%;
+    height: 320px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    /* border: 2px solid white; */
+}
+
+#map iframe {
+    width: 60%;
+    height: 320px;
+}
